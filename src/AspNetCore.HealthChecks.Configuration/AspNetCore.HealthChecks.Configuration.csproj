@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.0.1</Version>
+    <Description>A health check to verify configuration values.</Description>
+    <Authors>Ritter Insurance Marketing</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/ritterim/AspNetCore.HealthChecks.Configuration</PackageProjectUrl>
+    <PackageTags>HealthChecks;HealthCheck;Health;Configuration</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
