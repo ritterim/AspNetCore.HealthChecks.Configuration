@@ -19,8 +19,7 @@ public static class ConfigurationHealthCheckBuilderExtensions
         Action<ConfigurationHealthOptions> setup,
         string name = default,
         HealthStatus? failureStatus = default,
-        IEnumerable<string> tags = default,
-        TimeSpan? timeout = default)
+        IEnumerable<string> tags = default)
     {
         var configurationOptions = new ConfigurationHealthOptions();
         setup?.Invoke(configurationOptions);
@@ -34,7 +33,6 @@ public static class ConfigurationHealthCheckBuilderExtensions
 #endif
                 ),
                 failureStatus,
-                tags,
-                timeout));
+                tags));
     }
 }
